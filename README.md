@@ -8,9 +8,10 @@ geofeed maintenance and to keep netbox as a source of truth for IP data.
 
 ## Setup instructions
 
+- Make sure you have Python 3 (and pip3) installed.
 - Clone this repository and install the dependencies:
   ```bash
-  git clone https://github.com/FrumentumNL/GeoBox.git
+  git clone https://github.com/FrumentumNL/GeoBox.git geobox
   cd geobox
   pip3 install -r requirements.txt
   ```

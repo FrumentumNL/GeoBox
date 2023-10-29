@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/python3
 # Shoddy python disclaimer: I don't really use python so this script can probably be cleaned up a lot
 
 import sys
