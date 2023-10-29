@@ -55,8 +55,8 @@ for entry in prefixes:
         continue
 
     country = '' if country is None else country
-    region = '' if region is None else country
-    city = '' if city is None else country
+    region = '' if region is None else region
+    city = '' if city is None else city
 
     feed += entry['prefix'] + ',' + country + ',' + region + ',' + city + ',\n'
     i += 1
