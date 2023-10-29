@@ -1,0 +1,75 @@
+[
+  {
+    "display": "Has Geolocation",
+    "content_types": [
+      "ipam.prefix"
+    ],
+    "type": "boolean",
+    "name": "geoloc_has_location",
+    "label": "Has Geolocation",
+    "group_name": "Geolocation",
+    "description": "When this option is disabled, the prefix will be explicitly flagged as not having a geolocation. To inherit the location from the parent prefix, leave this enabled and leave the other fields blank.",
+    "required": true,
+    "search_weight": 1000,
+    "filter_logic": "loose",
+    "ui_visibility": "read-write",
+    "default": true,
+    "weight": 10
+  },
+  {
+    "display": "Country",
+    "content_types": [
+      "ipam.prefix"
+    ],
+    "type": "select",
+    "data_type": "string",
+    "name": "geoloc_country",
+    "label": "Country",
+    "group_name": "Geolocation",
+    "description": "",
+    "required": false,
+    "search_weight": 1000,
+    "filter_logic": "loose",
+    "ui_visibility": "read-write",
+    "default": null,
+    "weight": 20,
+    "choice_set": "geoloc_country"
+  },
+  {
+    "display": "Region",
+    "content_types": [
+      "ipam.prefix"
+    ],
+    "type": "select",
+    "data_type": "string",
+    "name": "geoloc_region",
+    "label": "Region",
+    "group_name": "Geolocation",
+    "description": "",
+    "required": false,
+    "search_weight": 1000,
+    "filter_logic": "loose",
+    "ui_visibility": "read-write",
+    "default": null,
+    "weight": 30,
+    "choice_set": "geoloc-region"
+  },
+  {
+    "display": "City",
+    "content_types": [
+      "ipam.prefix"
+    ],
+    "type": "text",
+    "data_type": "string",
+    "name": "geoloc_city",
+    "label": "City",
+    "group_name": "Geolocation",
+    "description": "",
+    "required": false,
+    "search_weight": 1000,
+    "filter_logic": "loose",
+    "ui_visibility": "read-write",
+    "default": null,
+    "weight": 40
+  }
+]
